@@ -64,13 +64,7 @@ CREATE TABLE airports (
     longitude DECIMAL(10,6)
 );
 
--- WHY THIS STRUCTURE?
--- - airport_code as PRIMARY KEY: Each airport has unique 3-letter code
--- - city and airport_name NOT NULL: Must have these basics
--- - state can be NULL: International airports don't have US states
--- - DECIMAL for coordinates: Need precise GPS location
-
-
+-
 -- ============================================
 -- TABLE 3: flights
 -- ============================================
