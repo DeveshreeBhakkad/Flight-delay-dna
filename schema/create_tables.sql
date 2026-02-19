@@ -259,6 +259,9 @@ CREATE INDEX idx_delay_reason ON flight_delays(delay_reason);
 -- Index on weather date and airport (to join with flights)
 CREATE INDEX idx_weather_date_airport ON weather(date, airport_code);
 
-
+-- WHY INDEXES?
+-- Without index: Database scans EVERY row to find matches (SLOW!)
+-- With index: Database jumps directly to matching rows (FAST!)
+-- Trade-off: Indexes take up storage space, but make queries 10-100x faster
 
 
